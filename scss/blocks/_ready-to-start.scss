@@ -24,9 +24,6 @@
     .ready-to-start {
         padding-top: 76px;
         padding-bottom: 76px;
-        &::after {
-            left: calc(50% - 560px);
-        }
     }
 }
 @media only screen and (max-width:600px) {

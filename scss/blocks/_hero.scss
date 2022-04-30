@@ -40,9 +40,6 @@
 @media only screen and (max-width:900px) {
     .hero {
         text-align: center;
-        &::after {
-            left: calc(50% + 280px);
-        }
     }
     .hero__container {
         flex-direction: column;
@@ -50,12 +47,6 @@
     .hero__heading {
         margin-right: 0;
         margin-bottom: 24px;
-    }
-    .hero__content{
-        &::before {
-            display: none;
-        }
-        max-width: 457px;
     }
     
 }

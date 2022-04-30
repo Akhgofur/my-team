@@ -569,9 +569,6 @@ img {
   .hero {
     text-align: center;
   }
-  .hero::after {
-    left: calc(50% + 280px);
-  }
   .hero__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -581,12 +578,6 @@ img {
   .hero__heading {
     margin-right: 0;
     margin-bottom: 24px;
-  }
-  .hero__content {
-    max-width: 457px;
-  }
-  .hero__content::before {
-    display: none;
   }
 }
 
