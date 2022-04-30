@@ -1037,6 +1037,11 @@ img {
     margin-bottom: 24px;
     margin-right: 0;
   }
+  .site-footer__nav-wrapper .sitenav__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .site-footer__desc {
     margin-bottom: 40px;
   }

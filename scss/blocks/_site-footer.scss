@@ -76,6 +76,9 @@
     .site-footer__nav-wrapper {
         margin-bottom: 24px;
         margin-right: 0;
+        .sitenav__list {
+            justify-content: space-between;
+        }
     }
     .site-footer__desc {
         margin-bottom: 40px;
