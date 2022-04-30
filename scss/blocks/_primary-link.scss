@@ -1,0 +1,17 @@
+
+.primary-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 33px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $color-white;
+    border: 2px solid $color-white;
+    border-radius: 24px;
+    flex-shrink: 0;
+}
+.primary-link--black {
+    border: 2px solid $color-sacramento-green;
+    color: $color-sacramento-green;
+}

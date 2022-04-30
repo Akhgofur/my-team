@@ -1,0 +1,27 @@
+.site-header {
+    padding-top: 73px;
+    background-color: $color-midnight-green;
+}
+.site-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header__btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+@media only screen and (max-width:600px) {
+    .site-header {
+        .primary-link {
+            display: none;
+        }
+        .sitenav {
+            display: none;
+        }
+    }
+    .site-header__btn {
+        display: block;
+    }
+}
