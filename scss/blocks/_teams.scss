@@ -1,0 +1,120 @@
+.teams {
+    background-color: $color-sacramento-green;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.teams__content {
+    padding-top: 54px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+        content: '';
+        width: 50px;
+        height: 4px;
+        position: absolute;
+        background-color: $color-light-coral;
+        left: 0;
+        top: 0;
+    }
+}
+.teams__heading {
+    margin: 0;
+    max-width: 440px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-right: 10px;
+}
+.teams__list {
+    max-width: 540px;
+    width: 100%;
+    @include list-unstyled
+}
+.teams__item {
+    padding-left: 7px;
+    width: 100%;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    position: relative;
+    display: flex;
+    align-items: start;
+    &::after {
+        content: '';
+        width: 56px;
+        height: 56px;
+        background-color: $color-police-blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 18px;
+        left: 19px;
+    }
+}
+.teams__item-img {
+    margin-right: 40px;
+    z-index: 2;
+}
+.teams__item-heading {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: $color-light-coral;
+}
+.teams__item-desc {
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+}
+@include breakpoint-down(900px) {
+    .teams {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .teams__content {
+        flex-direction: column;
+        max-width: 590px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .teams__heading {
+        margin-right: 0;
+        max-width: 445px;
+        margin-bottom: 64px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .teams__list {
+        max-width: 580px;
+    }
+}
+@include breakpoint-down(550px) {
+    .teams {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .teams__heading {
+        max-width: 240px;
+    }
+    .teams__item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .teams__item::after {
+        left: calc(50% - 10px);
+    }
+    .teams__item-img {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+    .teams__item-heading {
+        margin-bottom: 8px;
+    }
+}
